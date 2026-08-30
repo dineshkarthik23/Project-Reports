@@ -522,10 +522,16 @@ When a model is too simple to capture the underlying pattern, performing poorly 
 More training data, regularization (L1/L2), dropout, cross-validation, early stopping, simplifying the model, and data augmentation.
 
 **9. What is bias?**
-Error from overly simplistic assumptions in the model, causing it to miss relevant patterns (underfitting).
+Bias is the error that occurs when a model is too simple to capture the true patterns in the data.
+
+High bias: The model oversimplifies, misses patterns and underfits the data.
+Low bias: The model captures patterns well and is closer to the true values.
 
 **10. What is variance?**
-Error from the model being too sensitive to small fluctuations in training data, causing overfitting.
+Variance arises when a model becomes too sensitive to training data and it captures noises in data too. It fails to give prediction on unseen new data.
+
+High variance: The model is too sensitive to small changes and may overfit.
+Low variance: The model is more stable but might miss some patterns.
 
 **11. Explain the bias-variance tradeoff.**
 As model complexity increases, bias decreases but variance increases (and vice versa). The goal is the sweet spot minimizing total error on unseen data.
